@@ -6,12 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crab55e</title>
+    <!-- OGP -->
+    <meta property="og:url" content="https://crab55e.mets-svr.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Crab55e" />
+    <meta property="og:description" content="🦀Crab55e！" />
+    <meta property="og:site_name" content="Mets-Server" />
+    <meta property="og:image" content="https://crab55e.mets-svr.com/images/light-theme-logo.svg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Crab55e" />
+    <meta name="twitter:title" content="Crab55e" />
+    <meta name="twitter:description" content="Hello!" />
+    <meta name="twitter:image" content="https://crab55e.mets-svr.com/images/light-theme-logo.svg" />
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
 </head>
 <style>
     body {
@@ -175,32 +188,17 @@
 
 <body>
     <header>
-        <div class="title not-selectable">Hello, world!</div>
-        <a href="#text" style="background-color: #fff0;">
-            <span class="material-symbols-outlined not-selectable" style="font-size: 10rem; color: #eee;">
-                expand_more
-                </span>
-        </a>
-    </header>
+        <div class="title not-selectable">Hello, world!</div><a href="#text" style="background-color: #fff0;"><span class="material-symbols-outlined not-selectable" style="font-size: 10rem; color: #eee;">expand_more</span></a></header>
     <main id="main">
         <div class="text" id="text">
             <h1>🦀I'm Crab55e!</h1>
             <ul>
-                <li>
-                    #Software-development, #Logo-design, #community-management
-                </li>
-                <li>
-                    <span id="age"></span> years old.
-                </li>
-                <li>
-                    <a href="//twitter.com/Crab55e" target="_blank" rel="noopener noreferrer">Twitter</a>,
-                    <a href="//discord.gg/SDY3eF88bw" target="_blank" rel="noopener noreferrer">Discord</a>,
-                    <a href="//mail.google.com/mail/?view=cm&to=crab@mets-svr.com" target="_blank" rel="noopener noreferrer">Mail</a>,
-                    <a href="//github.com/Crab55e" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
+                <li>#Software-development, #Logo-design, #Community-management</li>
+                <li><span id="age"></span> years old.</li>
+                <li><a href="//twitter.com/Crab55e" target="_blank" rel="noopener noreferrer">Twitter</a>,<a href="//discord.gg/SDY3eF88bw" target="_blank" rel="noopener noreferrer">Discord</a>,<a href="//mail.google.com/mail/?view=cm&to=crab@mets-svr.com"
+                        target="_blank" rel="noopener noreferrer">GMail</a>,<a href="//github.com/Crab55e" target="_blank" rel="noopener noreferrer">GitHub</a>,<a href="https://www.amazon.jp/hz/wishlist/ls/N02P3I5AW944?ref_=wl_share" target="_blank" rel="noopener noreferrer">🥔 <!-- "芋"って漢字にしたらかわさんに「おもんない」って言われたんですよね --></a></li>
             </ul>
-            <h4>I am administrator of <a href="//discord.mets-svr.com" target="_blank" rel="noopener noreferrer">"Met's-Server"</a><br>this domain is sub-domain of <a href="//mets-svr.com" target="_blank" rel="noopener noreferrer">"mets-svr.com"</a> that
-                uses various projects i work on.</h4>
+            <h4>I am administrator of <a href="//discord.mets-svr.com" target="_blank" rel="noopener noreferrer">"Met's-Server"</a><br>this domain is sub-domain of <a href="//mets-svr.com" target="_blank" rel="noopener noreferrer">"mets-svr.com"</a> that uses various projects i work on.</h4>
         </div>
     </main>
     <footer>
@@ -209,22 +207,22 @@
     <div id="stalker"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
-        var currentURL = new URL(location.href)
-        var URLParams = new URLSearchParams(currentURL.search)
+        var currentURL = new URL(location.href);
+        var URLParams = new URLSearchParams(currentURL.search);
         if (URLParams.get("l") == "ja") {
             langPack = {
                 "topTitle": "Hello, world!",
                 "myName": "🦀Crab55e！",
-                "skills": "#ソフトウェア開発, #ロゴデザイン, #コミュニティ管理",
+                "skills": "#ソフトウェア開発、#ロゴデザイン, #コミュニティ管理",
                 "myAge": "<span id=\"age\"></span>歳",
-                "descriptionText": "<a href=\"\/\/discord.mets-svr.com\" target=\"_blank\" rel=\"noopener noreferrer\">\"Met's-Server\"</a>の運営の一人です<br>このドメインは<a href=\"\/\/mets-svr.com\" target=\"_blank\" rel=\"noopener noreferrer\">\"mets-svr.com\"</a>のサブドメインで、様々なことに使用しています"
-            }
-            document.querySelector("body > header > div").innerHTML = langPack.topTitle
-            document.querySelector("#text > h1").innerHTML = langPack.myName
-            document.querySelector("#text > ul > li:nth-child(1)").innerHTML = langPack.skills
-            document.querySelector("#text > ul > li:nth-child(2)").innerHTML = langPack.myAge
-            document.querySelector("#text > h4").innerHTML = langPack.descriptionText
-        }
+                "descriptionText": "<a href=\"\/\/discord.mets-svr.com\" target=\"_blank\" rel=\"noopener noreferrer\">\"Met's-Server\"</a>の運営の一人です<br>このドメインは<a href=\"\/\/mets-svr.com\" target=\"_blank\" rel=\"noopener noreferrer\">\"mets-svr.com\"</a>のサブドメインで、様々なプロジェクトで使用しています"
+            };
+            document.querySelector("body > header > div").innerHTML = langPack.topTitle;
+            document.querySelector("#text > h1").innerHTML = langPack.myName;
+            document.querySelector("#text > ul > li:nth-child(1)").innerHTML = langPack.skills;
+            document.querySelector("#text > ul > li:nth-child(2)").innerHTML = langPack.myAge;
+            document.querySelector("#text > h4").innerHTML = langPack.descriptionText;
+        };
         const birthday = {
             year: 2007,
             month: 7,
@@ -235,15 +233,12 @@
         var age = today.getFullYear() - birthday.year;
         if (today < thisYearsBirthday) {
             age--;
-        }
-        $("#age").text(age)
-
+        };
+        $("#age").text(age);
         $("#menu").click(function() {
             $("#menu").toggleClass("open")
-        })
-
-        $(".toggle")
-
+        });
+        $(".toggle");
         $(document).on("mousemove", function(e) {
             var x = e.clientX;
             var y = e.clientY;
@@ -253,19 +248,15 @@
                 "left": x + "px"
             });
         });
-        $("a").hover(
-            function() {
-                $("#stalker").addClass("hovering");
-            },
-            function() {
-                $("#stalker").removeClass("hovering");
-            }
-        );
+        $("a").hover(function() {
+            $("#stalker").addClass("hovering");
+        }, function() {
+            $("#stalker").removeClass("hovering");
+        });
         $(function() {
-
             $('a[href^="#"]').click(function() {
                 var adjust = 128;
-                var speed = 400
+                var speed = 400;
                 var href = $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
                 var position = target.offset().top - adjust;
@@ -279,7 +270,7 @@
             if (e.key == "Shift") {
                 $("#stalker").addClass("zoom")
             }
-        })
+        });
         $(document).keyup(function(e) {
             if (e.key == "Shift") {
                 $("#stalker").removeClass("zoom")
